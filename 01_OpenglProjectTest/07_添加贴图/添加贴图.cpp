@@ -103,7 +103,7 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	//加载图片信息  并且复制到 data中
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("E:/vs2015project/01_OpenglProjectTest/Assets/Textures/wall.jpg", &width, &height, &nrChannels, 0);
+	unsigned char *data = stbi_load("./../Assets/Textures/wall.jpg", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		//生成纹理

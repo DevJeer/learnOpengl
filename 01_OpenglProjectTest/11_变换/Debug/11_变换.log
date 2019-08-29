@@ -1,4 +1,5 @@
 ﻿  变换.cpp
 e:\vs2015project\01_openglprojecttest\11_变换\变换.cpp(186): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
   11_变换.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\11_变换.exe
   11_变换.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\11_变换.pdb (Partial PDB)

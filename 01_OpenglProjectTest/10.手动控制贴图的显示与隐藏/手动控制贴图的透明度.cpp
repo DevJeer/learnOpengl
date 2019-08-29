@@ -106,7 +106,7 @@ int main()
 	//加载图片信息  并且复制到 data中
 	int width, height, nrChannels;
 	stbi_set_flip_vertically_on_load(true);
-	unsigned char *data = stbi_load("E:/vs2015project/01_OpenglProjectTest/Assets/Textures/container.jpg", &width, &height, &nrChannels, 0);
+	unsigned char *data = stbi_load("./../Assets/Textures/container.jpg", &width, &height, &nrChannels, 0);
 	if (data)
 	{
 		//生成纹理

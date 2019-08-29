@@ -138,6 +138,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="F:\openGL\glad\src\glad.c" />
+    <ClCompile Include="坐标系统.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyShader.h" />
