@@ -1,0 +1,11 @@
+﻿  颜色.cpp
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(123): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(197): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(198): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(201): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(202): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(203): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(204): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\17.颜色学习\颜色.cpp(212): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  17.颜色学习.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\17.颜色学习.exe
+  17.颜色学习.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\17.颜色学习.pdb (Partial PDB)

@@ -1,3 +1,5 @@
 ﻿  只让三倍数的箱子旋转.cpp
+  LINK : 没有找到 E:\vs2015project\01_OpenglProjectTest\Debug\14.坐标系统只让三倍数的箱子旋转.exe 或上一个增量链接没有生成它；正在执行完全链接
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   14.坐标系统只让三倍数的箱子旋转.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\14.坐标系统只让三倍数的箱子旋转.exe
   14.坐标系统只让三倍数的箱子旋转.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\14.坐标系统只让三倍数的箱子旋转.pdb (Partial PDB)

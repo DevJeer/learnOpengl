@@ -1,0 +1,12 @@
+﻿  摄像机.cpp
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(221): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(285): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(306): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(307): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(310): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(311): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(312): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(313): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\15.摄像机\摄像机.cpp(338): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+  15.摄像机.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\15.摄像机.exe
+  15.摄像机.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\15.摄像机.pdb (Partial PDB)
