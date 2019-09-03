@@ -1,0 +1,13 @@
+﻿  旋转光照.cpp
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(139): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(140): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(206): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(207): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(210): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(211): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(212): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(213): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\20.基础光照练习-让光在场景里面旋转\旋转光照.cpp(221): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  20.基础光照练习-让光在场景里面旋转.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\20.基础光照练习-让光在场景里面旋转.exe
+  20.基础光照练习-让光在场景里面旋转.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\20.基础光照练习-让光在场景里面旋转.pdb (Partial PDB)

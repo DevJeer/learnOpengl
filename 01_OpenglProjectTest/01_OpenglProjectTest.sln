@@ -37,6 +37,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.创建摄像机类并且
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17.颜色学习", "17.颜色学习\17.颜色学习.vcxproj", "{C2854A70-DD56-4773-BBB1-90E22CA7ACD6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18.基础光照-环境光照", "18.基础光照-环境光照\18.基础光照-环境光照.vcxproj", "{6528B39C-B15A-498B-B3DD-A6F2D1652037}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19.基础光照-镜面高光", "19.基础光照-镜面高光\19.基础光照-镜面高光.vcxproj", "{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20.基础光照练习-让光在场景里面旋转", "20.基础光照练习-让光在场景里面旋转\20.基础光照练习-让光在场景里面旋转.vcxproj", "{5D2D11F1-74D2-462A-A3A3-86D80843110A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.基础光照-在观察空间中计算冯氏着色", "21.基础光照-在观察空间中计算冯氏着色\21.基础光照-在观察空间中计算冯氏着色.vcxproj", "{E6517EA7-E05C-492E-9E8C-56D618966605}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "22.基础光照-Gouraud着色", "22.基础光照-Gouraud着色\22.基础光照-Gouraud着色.vcxproj", "{3CE81020-4910-4568-9D4F-D1D57C980200}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +191,46 @@ Global
 		{C2854A70-DD56-4773-BBB1-90E22CA7ACD6}.Release|x64.Build.0 = Release|x64
 		{C2854A70-DD56-4773-BBB1-90E22CA7ACD6}.Release|x86.ActiveCfg = Release|Win32
 		{C2854A70-DD56-4773-BBB1-90E22CA7ACD6}.Release|x86.Build.0 = Release|Win32
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Debug|x64.ActiveCfg = Debug|x64
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Debug|x64.Build.0 = Debug|x64
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Debug|x86.ActiveCfg = Debug|Win32
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Debug|x86.Build.0 = Debug|Win32
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Release|x64.ActiveCfg = Release|x64
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Release|x64.Build.0 = Release|x64
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Release|x86.ActiveCfg = Release|Win32
+		{6528B39C-B15A-498B-B3DD-A6F2D1652037}.Release|x86.Build.0 = Release|Win32
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Debug|x64.ActiveCfg = Debug|x64
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Debug|x64.Build.0 = Debug|x64
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Debug|x86.Build.0 = Debug|Win32
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Release|x64.ActiveCfg = Release|x64
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Release|x64.Build.0 = Release|x64
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Release|x86.ActiveCfg = Release|Win32
+		{6EB18CAE-2FD0-489D-B7F4-93CB609D7A0C}.Release|x86.Build.0 = Release|Win32
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Debug|x64.ActiveCfg = Debug|x64
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Debug|x64.Build.0 = Debug|x64
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Debug|x86.ActiveCfg = Debug|Win32
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Debug|x86.Build.0 = Debug|Win32
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Release|x64.ActiveCfg = Release|x64
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Release|x64.Build.0 = Release|x64
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Release|x86.ActiveCfg = Release|Win32
+		{5D2D11F1-74D2-462A-A3A3-86D80843110A}.Release|x86.Build.0 = Release|Win32
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Debug|x64.ActiveCfg = Debug|x64
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Debug|x64.Build.0 = Debug|x64
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Debug|x86.Build.0 = Debug|Win32
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Release|x64.ActiveCfg = Release|x64
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Release|x64.Build.0 = Release|x64
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Release|x86.ActiveCfg = Release|Win32
+		{E6517EA7-E05C-492E-9E8C-56D618966605}.Release|x86.Build.0 = Release|Win32
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Debug|x64.ActiveCfg = Debug|x64
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Debug|x64.Build.0 = Debug|x64
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Debug|x86.ActiveCfg = Debug|Win32
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Debug|x86.Build.0 = Debug|Win32
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Release|x64.ActiveCfg = Release|x64
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Release|x64.Build.0 = Release|x64
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Release|x86.ActiveCfg = Release|Win32
+		{3CE81020-4910-4568-9D4F-D1D57C980200}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

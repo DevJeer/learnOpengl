@@ -9,20 +9,21 @@
 #include "MyShader.h"
 
 #include <iostream>
-
+//帧缓冲区回调函数
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+//鼠标回调 / 滚轮回调 / 输入函数
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow* window);
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-
+//创建摄像机对象
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
-
+//计时器
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 //灯光的位置
@@ -42,7 +43,7 @@ int main()
 	glfwSetScrollCallback(window, scroll_callback);
 	//设置鼠标不可见
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
+	//加载鼠标指针
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
 		return -1;
@@ -50,8 +51,10 @@ int main()
 
 	//开启深度测试
 	glEnable(GL_DEPTH_TEST);
+	//加载Shader
 	Shader lightingShader("./../Assets/Shaders/Part2/1.1.color.vs", "./../Assets/Shaders/Part2/1.1.color.fs");
 	Shader lampShader("./../Assets/Shaders/Part2/1.1.lamp.vs", "./../Assets/Shaders/Part2/1.1.lamp.fs");
+	//顶点数据
 	float vertices[] = {
 		-0.5f, -0.5f, -0.5f,
 		0.5f, -0.5f, -0.5f,
@@ -95,17 +98,19 @@ int main()
 		-0.5f,  0.5f,  0.5f,
 		-0.5f,  0.5f, -0.5f,
 	};
-
+	//创建VAO VBO,并且绑定
 	unsigned int cubeVAO, VBO;
 	glGenVertexArrays(1, &cubeVAO);
 	glGenBuffers(1, &VBO);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	//复制信息
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
+	//绑定顶点信息
 	glBindVertexArray(cubeVAO);
-
+	//顶点属性
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	//使用
 	glEnableVertexAttribArray(0);
 
 
@@ -142,7 +147,6 @@ int main()
 
 		glm::mat4 model = glm::mat4(1.0f);
 		lightingShader.setMat4("model", model);
-
 		//draw cube
 		glBindVertexArray(cubeVAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);

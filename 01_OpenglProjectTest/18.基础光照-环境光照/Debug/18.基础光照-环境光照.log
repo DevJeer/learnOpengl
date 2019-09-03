@@ -1,0 +1,11 @@
+﻿  环境光.cpp
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(204): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(205): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(208): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(209): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(210): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(211): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\18.基础光照-环境光照\环境光.cpp(219): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  18.基础光照-环境光照.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\18.基础光照-环境光照.exe
+  18.基础光照-环境光照.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\18.基础光照-环境光照.pdb (Partial PDB)
