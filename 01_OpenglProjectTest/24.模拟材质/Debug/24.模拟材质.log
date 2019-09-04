@@ -1,0 +1,14 @@
+﻿  模拟材质.cpp
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(147): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(148): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(149): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(225): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(226): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(229): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(230): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(231): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(232): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\24.模拟材质\模拟材质.cpp(240): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  24.模拟材质.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\24.模拟材质.exe
+  24.模拟材质.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\24.模拟材质.pdb (Partial PDB)
