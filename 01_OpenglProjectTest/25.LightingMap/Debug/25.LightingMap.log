@@ -1,0 +1,12 @@
+﻿  glad.c
+  LightingMap.cpp
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(143): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(230): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(231): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(234): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(235): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(236): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(237): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\25.lightingmap\lightingmap.cpp(245): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  25.LightingMap.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\25.LightingMap-DiffuseMap.exe

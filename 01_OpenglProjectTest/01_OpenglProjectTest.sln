@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24.模拟材质", "24.模�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25.LightingMap-DiffuseMap", "25.LightingMap\25.LightingMap.vcxproj", "{748F4948-1656-4D6B-B434-A532355EB669}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26.LightingMap-SpecularMap", "26.LightingMap-SpecularMap\26.LightingMap-SpecularMap.vcxproj", "{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{748F4948-1656-4D6B-B434-A532355EB669}.Release|x64.Build.0 = Release|x64
 		{748F4948-1656-4D6B-B434-A532355EB669}.Release|x86.ActiveCfg = Release|Win32
 		{748F4948-1656-4D6B-B434-A532355EB669}.Release|x86.Build.0 = Release|Win32
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Debug|x64.ActiveCfg = Debug|x64
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Debug|x64.Build.0 = Debug|x64
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Debug|x86.ActiveCfg = Debug|Win32
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Debug|x86.Build.0 = Debug|Win32
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Release|x64.ActiveCfg = Release|x64
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Release|x64.Build.0 = Release|x64
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Release|x86.ActiveCfg = Release|Win32
+		{5BB93A89-BEF3-4ED0-B99A-0566469E7E69}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
