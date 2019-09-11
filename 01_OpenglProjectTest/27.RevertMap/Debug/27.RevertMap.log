@@ -1,0 +1,10 @@
+﻿  RevertMap.cpp
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(145): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(243): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(244): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(247): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(248): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(249): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(250): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\27.revertmap\revertmap.cpp(258): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  27.RevertMap.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\27.RevertMap.exe

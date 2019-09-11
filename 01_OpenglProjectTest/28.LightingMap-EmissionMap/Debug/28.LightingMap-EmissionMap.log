@@ -1,0 +1,10 @@
+﻿  EmissionMap.cpp
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(148): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(249): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(250): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(253): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(254): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(255): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(256): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\28.lightingmap-emissionmap\emissionmap.cpp(264): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  28.LightingMap-EmissionMap.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\28.LightingMap-EmissionMap.exe
