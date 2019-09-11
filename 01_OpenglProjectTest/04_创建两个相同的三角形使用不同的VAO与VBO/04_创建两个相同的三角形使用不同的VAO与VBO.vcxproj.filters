@@ -18,7 +18,7 @@
     <ClCompile Include="创建两个相同的三角形.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="F:\openGL\glad\src\glad.c">
+    <ClCompile Include="..\openGL\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

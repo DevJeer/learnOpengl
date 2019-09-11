@@ -1,3 +1,4 @@
-﻿  坐标系统.cpp
+﻿  glad.c
+  坐标系统.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   12.坐标系统.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\12.坐标系统.exe
-  12.坐标系统.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\12.坐标系统.pdb (Partial PDB)

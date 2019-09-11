@@ -1,3 +1,4 @@
-﻿  TestWindow.cpp
+﻿  glad.c
+  TestWindow.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   01_OpenglProjectTest.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\01_OpenglProjectTest.exe
-  01_OpenglProjectTest.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\01_OpenglProjectTest.pdb (Partial PDB)

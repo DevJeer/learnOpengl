@@ -18,7 +18,7 @@
     <ClCompile Include="五颜六色三角形.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="F:\openGL\glad\src\glad.c">
+    <ClCompile Include="..\openGL\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,4 @@
-﻿  绘制两个彼此相连的三角形.cpp
+﻿  glad.c
+  绘制两个彼此相连的三角形.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   03_绘制更多的三角形.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\03_绘制更多的三角形.exe
-  03_绘制更多的三角形.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\03_绘制更多的三角形.pdb (Partial PDB)

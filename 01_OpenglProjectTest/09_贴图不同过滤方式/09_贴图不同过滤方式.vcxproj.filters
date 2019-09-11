@@ -18,7 +18,7 @@
     <ClCompile Include="贴图不同过滤方式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="F:\openGL\glad\src\glad.c">
+    <ClCompile Include="..\openGL\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

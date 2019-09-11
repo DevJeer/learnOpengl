@@ -1,3 +1,4 @@
-﻿  创建两个相同的三角形.cpp
+﻿  glad.c
+  创建两个相同的三角形.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   04_创建两个相同的三角形使用不同的VAO与VBO.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\04_创建两个相同的三角形使用不同的VAO与VBO.exe
-  04_创建两个相同的三角形使用不同的VAO与VBO.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\04_创建两个相同的三角形使用不同的VAO与VBO.pdb (Partial PDB)

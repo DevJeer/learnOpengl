@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="F:\openGL\glad\src\glad.c">
+    <ClCompile Include="使用摄像机类进行移动.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="使用摄像机类进行移动.cpp">
+    <ClCompile Include="..\openGL\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

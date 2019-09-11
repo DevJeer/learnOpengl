@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ReferencePath>F:\openGL\glfw-3.3.bin.WIN32\include;F:\openGL\glad\include;$(ReferencePath)</ReferencePath>
-    <LibraryPath>F:\openGL\glfw-3.3.bin.WIN32\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>.\..\openGL\glfw-3.3.bin.WIN32\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ReferencePath>F:\openGL\glfw-3.3.bin.WIN32\include;F:\openGL\glad\include;$(ReferencePath)</ReferencePath>
@@ -89,7 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>F:\openGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\openGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -137,7 +137,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="F:\openGL\glad\src\glad.c" />
+    <ClCompile Include="..\openGL\glad\src\glad.c" />
     <ClCompile Include="旋转光照.cpp" />
   </ItemGroup>
   <ItemGroup>

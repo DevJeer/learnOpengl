@@ -1,0 +1,5 @@
+lib:   
+.\..\openGL\glfw-3.3.bin.WIN32\lib-vc2015
+include  
+.\..\openGL
+E:\vs2015project\01_OpenglProjectTest\openGL\glad\src

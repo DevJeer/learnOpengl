@@ -1,3 +1,4 @@
-﻿  添加贴图.cpp
+﻿  glad.c
+  添加贴图.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   07_添加贴图.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\07_添加贴图.exe
-  07_添加贴图.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\07_添加贴图.pdb (Partial PDB)
