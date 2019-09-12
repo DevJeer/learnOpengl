@@ -1,0 +1,20 @@
+﻿  MultLight.cpp
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(167): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(193): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(194): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(201): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(202): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(209): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(210): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(217): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(218): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(226): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(227): warning C4305: “参数”: 从“double”到“float”截断
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(312): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(313): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(316): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(317): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(318): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(319): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\32.multlight\multlight.cpp(327): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  32.MultLight.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\32.MultLight.exe
