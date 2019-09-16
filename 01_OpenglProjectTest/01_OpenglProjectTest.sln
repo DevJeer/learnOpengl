@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31.SpotLight", "31.SpotLigh
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32.MultLight", "32.MultLight\32.MultLight.vcxproj", "{8F21BB01-7556-4430-AB33-079EF51F14A7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "33.LoadModel", "33.LoadModel\33.LoadModel.vcxproj", "{E43722C5-808A-446B-B0F3-52A60AC16E21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -397,6 +399,16 @@ Global
 		{8F21BB01-7556-4430-AB33-079EF51F14A7}.Release|x64.Build.0 = Release|x64
 		{8F21BB01-7556-4430-AB33-079EF51F14A7}.Release|x86.ActiveCfg = Release|Win32
 		{8F21BB01-7556-4430-AB33-079EF51F14A7}.Release|x86.Build.0 = Release|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Debug|x64.ActiveCfg = Debug|x64
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Debug|x64.Build.0 = Debug|x64
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Debug|x86.ActiveCfg = Debug|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Debug|x86.Build.0 = Debug|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Release|Any CPU.ActiveCfg = Release|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Release|x64.ActiveCfg = Release|x64
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Release|x64.Build.0 = Release|x64
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Release|x86.ActiveCfg = Release|Win32
+		{E43722C5-808A-446B-B0F3-52A60AC16E21}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
