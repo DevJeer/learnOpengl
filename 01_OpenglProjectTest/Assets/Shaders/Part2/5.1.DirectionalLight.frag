@@ -30,7 +30,7 @@ void main()
 	//ambient  将texture进行赋值
 	vec3 ambient = light.ambient * texture(material.diffuse,TexCoords).rgb;
 	
-	//diffuse   漫反射需要与贴图的rgb混合
+	//diffuse   漫反射需要与贴图的rgb混合  directional light是漫反射  而且它只受场景中光源的方向的影响
 	vec3 norm = normalize(Normal);
 	//directional light 是影响所有物体的shader
 	vec3 lightDir = normalize(-light.direction);  //0 - > position  取反就可以照射到物体啦
@@ -47,7 +47,8 @@ void main()
 	//emission
 	//vec3 emission = texture(material.emission,TexCoords).rgb;
 
-	vec3 result = ambient + diffuse + specular +emission;
+	//vec3 result = ambient + diffuse + specular +emission;
+	vec3 result = ambient + diffuse + specular ;
 	FragColor = vec4(result,1.0f);
 	
 	
