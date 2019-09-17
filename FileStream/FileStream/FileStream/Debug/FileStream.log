@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  FileStreamPractise.cpp
   P1.cpp
   P2.cpp
@@ -5,3 +6,7 @@
   P5.cpp
   正在生成代码...
   FileStream.vcxproj -> E:\vs2015project\FileStream\FileStream\Debug\FileStream.exe
+=======
+﻿  P4.cpp
+  FileStream.vcxproj -> F:\VSWorkSpace\VS2017\learnOpengl\FileStream\FileStream\Debug\FileStream.exe
+>>>>>>> c80aff7324fec2674fa28e4f1525b33012b58634

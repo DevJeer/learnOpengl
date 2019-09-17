@@ -27,7 +27,11 @@
     <ClCompile Include="P3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="P5.cpp">
+=======
+    <ClCompile Include="P4.cpp">
+>>>>>>> c80aff7324fec2674fa28e4f1525b33012b58634
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
