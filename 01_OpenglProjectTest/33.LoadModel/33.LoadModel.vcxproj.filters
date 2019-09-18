@@ -18,6 +18,9 @@
     <ClCompile Include="..\openGL\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="loadModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyShader.h">
@@ -29,5 +32,17 @@
     <ClInclude Include="MyMesh.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MyModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="..\Assets\Shaders\Part3\1.model_loading.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part3\1.model_loading.vert">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

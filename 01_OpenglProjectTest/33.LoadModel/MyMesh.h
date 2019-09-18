@@ -19,7 +19,7 @@ struct Vertex
 	//法线
 	glm::vec3 Normal;
 	//纹理坐标
-	glm::vec3 TexCoords;
+	glm::vec2 TexCoords;
 	//切面
 	glm::vec3 Tangent;
 	//双切面
@@ -120,15 +120,22 @@ private:
 		//Normal
 		glEnableVertexAttribArray(1);
 		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Normal));
+		//texture coords
+		glEnableVertexAttribArray(2);
+		glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, TexCoords));
+		//tangent
+		glEnableVertexAttribArray(3);
+		glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Tangent));
+		//bitangent
+		glEnableVertexAttribArray(4);
+		glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Bitangent));
 
+		//unbind
+		glBindVertexArray(0);
 
 	}
 
 };
-
-
-
-
 
 
 #endif

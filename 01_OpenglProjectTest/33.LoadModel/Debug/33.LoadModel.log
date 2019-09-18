@@ -1,0 +1,10 @@
+﻿  loadModel.cpp
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(67): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(125): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(126): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(129): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(131): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(132): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\33.loadmodel\loadmodel.cpp(140): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  33.LoadModel.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\33.LoadModel.exe
