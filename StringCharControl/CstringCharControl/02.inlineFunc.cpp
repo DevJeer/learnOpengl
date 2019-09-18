@@ -22,13 +22,21 @@
 //	return (a % 2 > 0) ? "Ææ" : "Å¼";
 //}
 //
+//
+//inline int adder(int& i)
+//{
+//	i++;
+//	return i;
+//}
+//
 //int main()
 //{
 //
 //	int i = 0;
-//	for (i = 1; i < 100; i++)
+//	for (i = 0; i < 100; i++)
 //	{
 //		cout << i << ": " << dbTest(i) << endl;
+//		cout << "adder(i)"<< adder(i) << endl;
 //	}
 //
 //	system("pause");
