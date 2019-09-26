@@ -27,6 +27,18 @@
     <ClInclude Include="Texture.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BallObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\openGL\glad\src\glad.c">
@@ -47,8 +59,26 @@
     <ClCompile Include="BreakOut.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLevel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.vert">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

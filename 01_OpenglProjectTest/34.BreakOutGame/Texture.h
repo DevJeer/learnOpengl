@@ -1,7 +1,7 @@
 #pragma once
 #ifndef TEXTURE_H
 #define TEXTURE_H	
-#include <glew.1.9.0.1/build/native/include/GL/glew.h>
+#include <glew-2.0.0/include/GL/glew.h>
 
 class Texture2D
 {

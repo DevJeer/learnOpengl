@@ -1,3 +1,6 @@
-﻿  BreakOut.cpp
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\breakout.cpp(43): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
-LINK : fatal error LNK1104: 无法打开文件“glew32.lib”
+﻿  Game.cpp
+e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(50): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(52): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(54): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(56): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+  34.BreakOutGame.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\34.BreakOutGame.exe

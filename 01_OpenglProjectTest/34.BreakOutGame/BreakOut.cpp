@@ -1,10 +1,11 @@
 #define GLEW_STATIC
-#include <glew.1.9.0.1/build/native/include/GL/glew.h>
+#include <glew-2.0.0/include/GL/glew.h>
 #include <glfw-3.3.bin.WIN32/include/GLFW/glfw3.h>
 #include "Game.h"
 #include "resource_manager.h"
 //键盘按下方法的声明
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 const GLuint SCREEN_WIDTH = 800;
 const GLuint SCREEN_HEIGHT = 600;
@@ -26,6 +27,7 @@ int main(int argc, char* argv[])
 	glGetError(); //获取错误
 
 	glfwSetKeyCallback(window, key_callback);
+	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	//视口
 	glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 	glEnable(GL_CULL_FACE);//开启面剔除
@@ -81,4 +83,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 			BreakOut.Keys[key] = GL_FALSE;
 		}
 	}
+}
+
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+	glViewport(0, 0, width, height);
 }

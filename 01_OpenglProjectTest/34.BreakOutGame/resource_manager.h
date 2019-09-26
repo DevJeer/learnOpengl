@@ -4,7 +4,7 @@
 
 #include <map>
 #include <string>
-#include <glew.1.9.0.1/build/native/include/GL/glew.h>
+#include <glew-2.0.0/include/GL/glew.h>
 #include "Texture.h"
 #include "Shader.h"
 
@@ -17,11 +17,11 @@ public:
 
 	static Shader   LoadShader(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile, std::string name);
 	// Retrieves a stored sader
-	static Shader   GetShader(std::string name);
+	static Shader&   GetShader(std::string name);
 	// Loads (and generates) a texture from file
 	static Texture2D LoadTexture(const GLchar *file, GLboolean alpha, std::string name);
 	// Retrieves a stored texture
-	static Texture2D GetTexture(std::string name);
+	static Texture2D& GetTexture(std::string name);
 
 	static void Clear();
 	

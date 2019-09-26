@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>.\..\packages\glew.1.9.0.1\build\native\lib\v110\Win32\Debug\static;.\..\openGL\glfw-3.3.bin.WIN32\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>.\..\openGL\glew-2.0.0\lib\Release\Win32;.\..\openGL\glfw-3.3.bin.WIN32\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -79,7 +79,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\..\packages;.\..\openGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\openGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -122,20 +122,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BallObject.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameLevel.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\openGL\glad\src\glad.c" />
+    <ClCompile Include="BallObject.cpp" />
     <ClCompile Include="BreakOut.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameLevel.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="resource_manager.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.frag" />
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.vert" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
