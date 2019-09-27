@@ -1,3 +1,4 @@
-﻿  贴图不同过滤方式.cpp
+﻿  glad.c
+  贴图不同过滤方式.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   09_贴图不同过滤方式.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\09_贴图不同过滤方式.exe
-  09_贴图不同过滤方式.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\09_贴图不同过滤方式.pdb (Partial PDB)

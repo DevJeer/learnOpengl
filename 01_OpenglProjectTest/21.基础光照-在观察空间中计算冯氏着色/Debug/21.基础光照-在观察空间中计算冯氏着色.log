@@ -1,3 +1,12 @@
 ﻿  glad.c
+  在观察空间中计算冯氏着色.cpp
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(217): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(218): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(221): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(222): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(223): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(224): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\21.基础光照-在观察空间中计算冯氏着色\在观察空间中计算冯氏着色.cpp(232): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   21.基础光照-在观察空间中计算冯氏着色.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\21.基础光照-在观察空间中计算冯氏着色.exe
-  21.基础光照-在观察空间中计算冯氏着色.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\21.基础光照-在观察空间中计算冯氏着色.pdb (Partial PDB)

@@ -1,3 +1,4 @@
-﻿  五颜六色三角形.cpp
+﻿  glad.c
+  五颜六色三角形.cpp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   05_五颜六色三角形.cpp.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\05_五颜六色三角形.cpp.exe
-  05_五颜六色三角形.cpp.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\05_五颜六色三角形.cpp.pdb (Partial PDB)

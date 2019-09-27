@@ -1,2 +1,5 @@
-﻿  添加多张贴图.cpp
+﻿  glad.c
+  添加多张贴图.cpp
+  LINK : 没有找到 E:\vs2015project\01_OpenglProjectTest\Debug\08_添加多张贴图.exe 或上一个增量链接没有生成它；正在执行完全链接
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   08_添加多张贴图.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\08_添加多张贴图.exe

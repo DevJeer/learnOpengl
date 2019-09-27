@@ -1,8 +1,21 @@
-﻿  Materials.cpp
+﻿  glad.c
+  Materials.cpp
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(147): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(148): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(149): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(147): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(148): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(149): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(223): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(224): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(227): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
@@ -10,5 +23,5 @@ e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(228): warning C424
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(229): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(230): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\23.材质\materials.cpp(238): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   23.材质.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\23.材质.exe
-  23.材质.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\23.材质.pdb (Partial PDB)

@@ -1,4 +1,5 @@
-﻿  Gouraud着色.cpp
+﻿  glad.c
+  Gouraud着色.cpp
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(206): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(207): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
@@ -7,6 +8,5 @@ e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着�
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(212): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(213): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\22.基础光照-gouraud着色\gouraud着色.cpp(221): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   22.基础光照-Gouraud着色.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\22.基础光照-Gouraud着色.exe
-  22.基础光照-Gouraud着色.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\22.基础光照-Gouraud着色.pdb (Partial PDB)

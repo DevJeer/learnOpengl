@@ -1,5 +1,6 @@
 ﻿  glad.c
   变换.cpp
 e:\vs2015project\01_openglprojecttest\11_变换\变换.cpp(186): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  LINK : 没有找到 E:\vs2015project\01_OpenglProjectTest\Debug\11_变换.exe 或上一个增量链接没有生成它；正在执行完全链接
 LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   11_变换.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\11_变换.exe

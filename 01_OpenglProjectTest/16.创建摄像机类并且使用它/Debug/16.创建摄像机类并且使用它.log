@@ -10,4 +10,3 @@ e:\vs2015project\01_openglprojecttest\16.创建摄像机类并且使用它\使�
 e:\vs2015project\01_openglprojecttest\16.创建摄像机类并且使用它\使用摄像机类进行移动.cpp(305): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
 LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   16.创建摄像机类并且使用它.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\16.创建摄像机类并且使用它.exe
-  16.创建摄像机类并且使用它.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\16.创建摄像机类并且使用它.pdb (Partial PDB)

@@ -8,5 +8,6 @@ e:\vs2015project\01_openglprojecttest\26.lightingmap-specularmap\specularmap.cpp
 e:\vs2015project\01_openglprojecttest\26.lightingmap-specularmap\specularmap.cpp(249): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\26.lightingmap-specularmap\specularmap.cpp(250): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 e:\vs2015project\01_openglprojecttest\26.lightingmap-specularmap\specularmap.cpp(258): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  LINK : 没有找到 E:\vs2015project\01_OpenglProjectTest\Debug\26.LightingMap-SpecularMap.exe 或上一个增量链接没有生成它；正在执行完全链接
 LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   26.LightingMap-SpecularMap.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\26.LightingMap-SpecularMap.exe

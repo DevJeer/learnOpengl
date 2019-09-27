@@ -126,6 +126,8 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameLevel.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="ParticleGenerator.h" />
+    <ClInclude Include="PostProcessor.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SpriteRenderer.h" />
@@ -138,12 +140,17 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameLevel.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="ParticleGenerator.cpp" />
     <ClCompile Include="resource_manager.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Particle.frag" />
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Particle.vert" />
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Post_Processing.frag" />
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Post_Processing.vert" />
     <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.frag" />
     <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.vert" />
     <None Include="packages.config" />

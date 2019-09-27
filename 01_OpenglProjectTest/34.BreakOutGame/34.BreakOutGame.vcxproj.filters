@@ -39,6 +39,12 @@
     <ClInclude Include="BallObject.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ParticleGenerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessor.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\openGL\glad\src\glad.c">
@@ -71,6 +77,9 @@
     <ClCompile Include="BallObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ParticleGenerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -78,6 +87,18 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="..\Assets\Shaders\Part4\BreakOut_Sprite.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Particle.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Particle.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Post_Processing.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Part4\BreakOut_Post_Processing.vert">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
