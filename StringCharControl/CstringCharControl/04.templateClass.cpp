@@ -14,6 +14,12 @@
 //	return a * b;
 //}
 //
+//template <class T>
+//T const& SubTwo(T const& x, T const& y)
+//{
+//	return x - y;
+//}
+//
 ////Ä£°åÀà
 //template <class T>
 //class  Stack

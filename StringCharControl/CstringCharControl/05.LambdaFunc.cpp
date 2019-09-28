@@ -23,6 +23,33 @@
 //
 //};
 //
+//class Man
+//{
+//public :
+//	void sayHello();
+//	void Lambda();
+//	
+//private:
+//	int a = 10;
+//	int b = 10;
+//};
+//
+//void Man::sayHello()
+//{
+//	cout << "Hello  guy" << endl;
+//}
+//
+//void Man::Lambda()
+//{
+//	auto funMan = [this]
+//	{
+//		cout << "a :"<<this->a << endl;
+//		cout <<"b :"<< this->b << endl;
+//		this->sayHello();
+//	};
+//	funMan();
+//}
+//
 //int main()
 //{
 //	/*auto basicLambda = [] {cout << "Hello Lambda" << endl; };
@@ -46,22 +73,32 @@
 //	};
 //
 //	func();*/
-//	//int i = 1024;
-//	////cout << &i << endl;
-//	//auto fun1 = [&]
-//	//{
-//	//	cout << &i << endl;
-//	//};
-//	//fun1();
+//	int i = 1024;
+//	cout << &i << endl;
+//	auto fun1 = [&]
+//	{
+//		cout << &i << endl;
+//	};
+//	fun1();
 //
-//	//int a = 1024, b = 2048;
+//	auto fun2 = [](int add1, int add2) 
+//	{
+//		return add1 + add2;
+//	};
+//	int ddd = fun2(1, 2);
+//	cout << "ddd is " << ddd << endl;
 //
-//	//auto func_1 = [=, &i]
-//	//{
-//	//	cout << "a: " << &a << endl;
-//	//	cout << "b: " << &b << endl;
-//	//};
-//	//func_1();
+//	int a = 1024, b = 2048;
+//
+//	auto func_1 = [=, &i]
+//	{
+//		cout << "a: " << &a << endl;
+//		cout << "b: " << &b << endl;
+//	};
+//	Man man;
+//	man.Lambda();
+//
+//	func_1();
 //	Test tes;
 //	tes.lambda();
 //	system("pause");

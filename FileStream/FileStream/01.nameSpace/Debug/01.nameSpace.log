@@ -1,2 +1,5 @@
-﻿  namespaceLearn.cpp
-  01.nameSpace.vcxproj -> E:\vs2015project\FileStream\FileStream\Debug\01.nameSpace.exe
+﻿  nameSpace.cpp
+  namespaceLearn.cpp
+  正在生成代码...
+  LINK : 没有找到 F:\VSWorkSpace\VS2017\learnOpengl\FileStream\FileStream\Debug\01.nameSpace.exe 或上一个增量链接没有生成它；正在执行完全链接
+  01.nameSpace.vcxproj -> F:\VSWorkSpace\VS2017\learnOpengl\FileStream\FileStream\Debug\01.nameSpace.exe

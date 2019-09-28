@@ -43,7 +43,7 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="PostProcessor.h">
-      <Filter>源文件</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +78,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ParticleGenerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

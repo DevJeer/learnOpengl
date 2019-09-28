@@ -1,16 +1,28 @@
-﻿  Game.cpp
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(70): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(72): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(74): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(76): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(170): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(174): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(178): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\game.cpp(182): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+﻿  glad.c
+  BallObject.cpp
+  BreakOut.cpp
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\breakout.cpp(45): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+  Game.cpp
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(70): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(72): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(74): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(76): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(170): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(174): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(178): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\game.cpp(182): warning C4244: “参数”: 从“float”转换到“GLuint”，可能丢失数据
+  GameLevel.cpp
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\gamelevel.cpp(62): warning C4244: “初始化”: 从“GLuint”转换到“GLfloat”，可能丢失数据
+  GameObject.cpp
   ParticleGenerator.cpp
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\particlegenerator.cpp(100): warning C4244: “=”: 从“float”转换到“GLuint”，可能丢失数据
-e:\vs2015project\01_openglprojecttest\34.breakoutgame\particlegenerator.cpp(101): warning C4244: “return”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\particlegenerator.cpp(101): warning C4244: “=”: 从“float”转换到“GLuint”，可能丢失数据
+f:\vsworkspace\vs2017\learnopengl\01_openglprojecttest\34.breakoutgame\particlegenerator.cpp(102): warning C4244: “return”: 从“float”转换到“GLuint”，可能丢失数据
+  resource_manager.cpp
+  Shader.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
   正在生成代码...
+  LINK : 没有找到 F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\34.BreakOutGame.exe 或上一个增量链接没有生成它；正在执行完全链接
 LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
 LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
 ParticleGenerator.obj : warning LNK4049: 已导入本地定义的符号 ___glewBindBuffer
@@ -49,9 +61,9 @@ Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUniformMatri
 Shader.obj : warning LNK4049: 已导入本地定义的符号 ___glewUseProgram
 SpriteRenderer.obj : warning LNK4049: 已导入本地定义的符号 ___glewActiveTexture
 SpriteRenderer.obj : warning LNK4049: 已导入本地定义的符号 ___glewDeleteVertexArrays
-glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“glew32s.lib(glew.obj)”或在“E:\vs2015project\01_OpenglProjectTest\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-soil.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(image_DXT.obj)”或在“E:\vs2015project\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-soil.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(image_helper.obj)”或在“E:\vs2015project\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-soil.lib(SOIL.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(SOIL.obj)”或在“E:\vs2015project\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-soil.lib(stb_image_aug.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(stb_image_aug.obj)”或在“E:\vs2015project\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-  34.BreakOutGame.vcxproj -> E:\vs2015project\01_OpenglProjectTest\Debug\34.BreakOutGame.exe
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“glew32s.lib(glew.obj)”或在“F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(image_DXT.obj)”或在“F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(image_helper.obj)”或在“F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil.lib(SOIL.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(SOIL.obj)”或在“F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil.lib(stb_image_aug.obj) : warning LNK4099: 未找到 PDB“SOIL.pdb”(使用“soil.lib(stb_image_aug.obj)”或在“F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\SOIL.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  34.BreakOutGame.vcxproj -> F:\VSWorkSpace\VS2017\learnOpengl\01_OpenglProjectTest\Debug\34.BreakOutGame.exe
