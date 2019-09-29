@@ -7,6 +7,7 @@
 #include <glfw-3.3.bin.WIN32/include/GLFW/glfw3.h>
 
 #include "GameLevel.h"   //游戏关卡
+#include "PowerUp.h"
 
 enum GameState
 {
@@ -39,6 +40,7 @@ public:
 	//关卡
 	std::vector<GameLevel> Levels;    //关卡集合
 	GLuint Level;								    	//当前的关卡
+	std::vector<PowerUp> PowerUps;    //增益的集合
 
 	Game(GLuint width, GLuint height);
 	~Game();
@@ -53,6 +55,10 @@ public:
 	//重置关卡
 	void ResetLevel();
 	void ResetPlayer();
+
+	//Powerups
+	void SpawnPowerUps(GameObject& block);
+	void UpdatePowerUps(GLfloat dt);
 
 private:
 

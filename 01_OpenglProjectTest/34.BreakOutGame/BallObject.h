@@ -16,6 +16,7 @@ public:
 	//球的状态
 	GLfloat Radius;   //球的半径
 	GLboolean Stuck;   //球是否在挡板上
+	GLboolean Sticky = GL_FALSE, PassThrough = GL_FALSE;   //Sticky  小球粘在挡板上  小球可以穿过非实心砖块
 
 	BallObject();
 	//小球的含参构造函数

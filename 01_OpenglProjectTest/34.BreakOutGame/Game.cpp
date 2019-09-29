@@ -3,6 +3,9 @@
 #include "SpriteRenderer.h"   //渲染精灵
 #include "BallObject.h"
 #include "ParticleGenerator.h"
+#include "PostProcessor.h"
+
+#include <algorithm>
 
 SpriteRenderer *Renderer;
 GameObject *Player;
@@ -10,6 +13,10 @@ GameObject *Player;
 BallObject* Ball;
 //创建粒子
 ParticleGenerator* Particles;
+//创建后期特效
+PostProcessor* Effects;
+
+GLfloat ShakeTime = 0.0f;
 
 //初始化小球的速度
 //这一部分需要优化一下
@@ -35,13 +42,18 @@ Game::~Game()
 	delete Player;
 	delete Ball;
 	delete Particles;
+	delete Effects;
 }
+
 void Game::Init()
 {
 	//加载shader
 	ResourceManager::LoadShader("./../Assets/Shaders/Part4/BreakOut_Sprite.vert", "./../Assets/Shaders/Part4/BreakOut_Sprite.frag", nullptr, "sprite");
 	//加载粒子shader
 	ResourceManager::LoadShader("./../Assets/Shaders/Part4/BreakOut_Particle.vert", "./../Assets/Shaders/Part4/BreakOut_Particle.frag", nullptr, "particle");
+	//加载后期效果shader
+	ResourceManager::LoadShader("./../Assets/Shaders/Part4/BreakOut_Post_Processing.vert", "./../Assets/Shaders/Part4/BreakOut_Post_Processing.frag", nullptr, "postprocessing");
+
 
 
 	//配置shader
@@ -61,9 +73,17 @@ void Game::Init()
 	ResourceManager::LoadTexture("./../Assets/Textures/block_solid.png", GL_FALSE, "block_solid");
 	ResourceManager::LoadTexture("./../Assets/Textures/paddle.png", true, "paddle");
 	ResourceManager::LoadTexture("./../Assets/Textures/particle.png", GL_TRUE, "particle");    //加载particle texture
+	//Load PowerUps
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_speed.png", GL_TRUE, "powerup_speed");
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_sticky.png", GL_TRUE, "powerup_sticky");
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_increase.png", GL_TRUE, "powerup_increase");
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_confuse.png", GL_TRUE, "powerup_confuse");
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_chaos.png", GL_TRUE, "powerup_chaos");
+	ResourceManager::LoadTexture("./../Assets/Textures/powerup_passthrough.png", GL_TRUE, "powerup_passthrough");
 
 	Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
 	Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
+	Effects = new PostProcessor(ResourceManager::GetShader("postprocessing"), this->Width, this->Height);
 
 	//加载关卡
 	GameLevel one;
@@ -98,6 +118,19 @@ void Game::Update(GLfloat dt)
 	this->DoCollisions();
 	//更新粒子系统
 	Particles->Update(dt, *Ball, 2, glm::vec2(Ball->Radius / 2));
+	//更新Buff
+	this->UpdatePowerUps(dt);
+
+	//播放后期特效
+	if (ShakeTime > 0.0f)
+	{
+		ShakeTime -= dt;
+		if (ShakeTime <= 0)
+		{
+			Effects->Shake = GL_FALSE;
+		}
+	}
+
 	//检查玩家是否失败
 	if (Ball->Position.y >= this->Height)
 	{
@@ -106,7 +139,7 @@ void Game::Update(GLfloat dt)
 		this->ResetPlayer();
 	}
 }
-
+//玩家的输入
 void Game::ProcessInput(GLfloat dt)
 {
 	if (this->State == GAME_ACTIVE)
@@ -136,7 +169,7 @@ void Game::ProcessInput(GLfloat dt)
 			}
 		}
 		if (this->Keys[GLFW_KEY_SPACE])    //如果玩家按下了空格键
-			Ball->Stuck = false;
+			Ball->Stuck = GL_FALSE;
 	}
 }
 //渲染场景
@@ -144,18 +177,28 @@ void Game::Render()
 {
 	if (this->State == GAME_ACTIVE)
 	{
+		Effects->BeginRender();
 		//绘制背景
 		Renderer->DrawSprite(ResourceManager::GetTexture("background"), glm::vec2(0, 0), glm::vec2(this->Width, this->Height), 0.0f);
 		//绘制关卡
 		this->Levels[this->Level].Draw(*Renderer);
 		//绘制玩家
 		Player->Draw(*Renderer);
+		//绘制buff
+		for (PowerUp& powerUp:this->PowerUps )
+		{
+			if (!powerUp.Destoryed)
+			{
+				powerUp.Draw(*Renderer);
+			}
+		}
+
 		//绘制粒子
 		Particles->Draw();
 		//绘制小球
 		Ball->Draw(*Renderer);
-
-
+		Effects->EndRender();
+		Effects->Render(glfwGetTime());
 	}
 	/*Texture2D temple_texture2d = ResourceManager::GetTexture("face");
 	Renderer->DrawSprite(temple_texture2d, glm::vec2(200, 200), glm::vec2(300, 400), 45.0f, glm::vec3(0.0f, 1.0f, 0.0f));*/
@@ -190,7 +233,149 @@ void Game::ResetPlayer()
 	Player->Size = PLAYER_SIZE;
 	Player->Position = glm::vec2(this->Width / 2 - PLAYER_SIZE.x / 2, this->Height - PLAYER_SIZE.y);   //底下中间
 	Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2 - BALL_RADIUS, -(BALL_RADIUS * 2)), INITIAL_BALL_VELOCITY);
+
+	Effects->Chaos = Effects->Confuse = GL_FALSE;
+	Ball->PassThrough = Ball->Sticky = GL_FALSE;
+	Player->Color = glm::vec3(1.0f);
+	Ball->Color = glm::vec3(1.0f);
 }
+//buff
+GLboolean IsOtherPowerUpActive(std::vector<PowerUp>& powerUps, std::string type);
+
+void Game::UpdatePowerUps(GLfloat dt)
+{
+	for (PowerUp& powerUp : this->PowerUps)
+	{
+		powerUp.Position += powerUp.Velocity * dt;
+		if (powerUp.Activated)
+		{
+			powerUp.Duration -= dt;
+			if (powerUp.Duration <= 0.0f)
+			{
+				powerUp.Activated = GL_FALSE;
+				if (powerUp.Type == "sticky")
+				{	
+					if (!IsOtherPowerUpActive(this->PowerUps, "sticky"))
+					{
+						Ball->Sticky = GL_FALSE;
+						Ball->Color = glm::vec3(1.0f);
+					}
+				}
+				else if (powerUp.Type == "pass-through")
+				{
+					if(!IsOtherPowerUpActive(this->PowerUps,"pass-through"))
+					{
+						Ball->PassThrough = GL_FALSE;
+						Ball->Color = glm::vec3(1.0f);
+					}
+				}
+				else if (powerUp.Type == "confuse")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps,"confuse"))
+					{
+						Effects->Confuse = GL_FALSE;
+					}
+				}
+				else if (powerUp.Type == "chaos")
+				{
+					if (!IsOtherPowerUpActive(this->PowerUps, "chaos"))
+					{
+						Effects->Chaos = GL_FALSE;
+					}
+				}
+			}
+		}
+	}
+	this->PowerUps.erase(std::remove_if(this->PowerUps.begin(),this->PowerUps.end(),
+		[](const PowerUp& powerUp) {return powerUp.Destoryed && !powerUp.Activated; }
+	), this->PowerUps.end());
+
+}
+
+GLboolean ShouldSpawn(GLuint chance)
+{
+	GLuint random = rand() % chance;
+	return random == 0;
+}
+
+void Game::SpawnPowerUps(GameObject& block)
+{
+	if (ShouldSpawn(10))
+		this->PowerUps.push_back(PowerUp("speed", glm::vec3(0.5f, 0.5f, 1.0f), 0.0f, block.Position, ResourceManager::GetTexture("powerup_speed")));
+	if (ShouldSpawn(10))
+	{
+		this->PowerUps.push_back(PowerUp("sticky", glm::vec3(1.0f, 0.5f, 1.0f), 20.0f, block.Position, ResourceManager::GetTexture("powerup_sticky")));
+	}
+	if (ShouldSpawn(10))
+	{
+		this->PowerUps.push_back(PowerUp("pass-through", glm::vec3(0.5f, 1.0f, 0.5f), 10.0f, block.Position, ResourceManager::GetTexture("powerup_passthrough")));
+	}
+	if (ShouldSpawn(10))
+	{
+		this->PowerUps.push_back(PowerUp("pad-size-increase", glm::vec3(1.0f, 0.6f, 0.4f), 0.0f, block.Position, ResourceManager::GetTexture("powerup_increase")));
+	}
+	if (ShouldSpawn(15))
+	{
+		this->PowerUps.push_back(PowerUp("confuse", glm::vec3(1.0f, 0.3f, 0.3f), 15.0f, block.Position, ResourceManager::GetTexture("powerup_confuse")));
+	}
+	if (ShouldSpawn(15))
+	{
+		this->PowerUps.push_back(PowerUp("chaos", glm::vec3(0.9f, 0.25f, 0.25f), 15.0f, block.Position, ResourceManager::GetTexture("powerup_chaos")));
+	}
+}
+
+//道具作用的触发
+void ActivatePowerUp(PowerUp& powerUp)
+{
+	if (powerUp.Type == "speed")
+	{
+		Ball->Velocity *= 1.2f;
+	}
+	else if (powerUp.Type == "sticky")
+	{
+		Ball->Sticky = GL_TRUE;
+		Player->Color = glm::vec3(1.0f, 0.5f, 1.0f);
+	}
+	else if (powerUp.Type == "pass-through")
+	{
+		Ball->PassThrough = GL_TRUE;
+		Ball->Color = glm::vec3(1.0f, 0.5f, 0.5f);
+	}
+	else if (powerUp.Type == "pad-size-increase")
+	{
+		Player->Size.x += 50;
+	}
+	else if (powerUp.Type == "confuse")
+	{
+		if (!Effects->Chaos)
+		{
+			Effects->Confuse = GL_TRUE;
+		}
+	}
+	else if (powerUp.Type == "chaos")
+	{
+		if (!Effects->Confuse)
+		{
+			Effects->Chaos = GL_TRUE;
+		}
+	}
+}
+
+GLboolean IsOtherPowerUpActive(std::vector<PowerUp>& powerUps, std::string type)
+{
+	for (const PowerUp& powerUp:powerUps)
+	{
+		if (powerUp.Activated)
+		{
+			if (powerUp.Type == type)
+			{
+				return GL_TRUE;
+			}
+		}
+	}
+	return GL_FALSE;
+}
+
 
 
 //AABB碰撞盒检测方法
@@ -218,41 +403,71 @@ void Game::DoCollisions()
 			{
 				//如果不是solid 就销毁
 				if (!box.IsSolid)
+				{
 					box.Destoryed = GL_TRUE;
+					this->SpawnPowerUps(box);
+				}
+				else
+				{
+					ShakeTime = 0.05f;
+					Effects->Shake = GL_TRUE;
+				}
 				//碰撞重定位
 				Direction dir = std::get<1>(collision);
 				glm::vec2 diff_vector = std::get<2>(collision);
-				if (dir == LEFT || dir == RIGHT)
+				if (!(Ball->PassThrough && !box.IsSolid))
 				{
-					//翻转速度
-					Ball->Velocity.x = -Ball->Velocity.x;
-					//重定位
-					GLfloat penetration = Ball->Radius - std::abs(diff_vector.x);
-					if (dir == LEFT)
+					if (dir == LEFT || dir == RIGHT)
 					{
-						Ball->Position.x += penetration;
+						//翻转速度
+						Ball->Velocity.x = -Ball->Velocity.x;
+						//重定位
+						GLfloat penetration = Ball->Radius - std::abs(diff_vector.x);
+						if (dir == LEFT)
+						{
+							Ball->Position.x += penetration;
+						}
+						else
+						{
+							Ball->Position.x -= penetration;
+						}
 					}
-					else
+					else   //垂直变换
 					{
-						Ball->Position.x -= penetration;
-					}
-				}
-				else   //垂直变换
-				{
-					Ball->Velocity.y = -Ball->Velocity.y;
+						Ball->Velocity.y = -Ball->Velocity.y;
 
-					GLfloat penetartion = Ball->Radius - std::abs(diff_vector.y);
-					if (dir == UP)
-					{
-						Ball->Position.y -= penetartion;
+						GLfloat penetartion = Ball->Radius - std::abs(diff_vector.y);
+						if (dir == UP)
+						{
+							Ball->Position.y -= penetartion;
+						}
+						else
+						{
+							Ball->Position.y += penetartion;
+						}
 					}
-					else
-					{
-						Ball->Position.y += penetartion;
-					}
+				
 				}
+				
 			}
 
+		}
+	}
+
+	for (PowerUp& powerUp : this->PowerUps)
+	{
+		if (!powerUp.Destoryed)
+		{
+			if (powerUp.Position.y >= this->Height)
+			{
+				powerUp.Destoryed = GL_TRUE;
+			}
+			if (CheckCollision(*Player, powerUp))
+			{
+				ActivatePowerUp(powerUp);
+				powerUp.Destoryed = GL_TRUE;
+				powerUp.Activated = GL_TRUE;
+			}
 		}
 	}
 
@@ -270,6 +485,8 @@ void Game::DoCollisions()
 		Ball->Velocity.x = INITIAL_BALL_VELOCITY.x * percentage * strength;
 		Ball->Velocity = glm::normalize(Ball->Velocity) * glm::length(oldVelocity);   //x轴相反
 		Ball->Velocity.y = -1 * abs(Ball->Velocity.y);
+
+		Ball->Stuck = Ball->Sticky;
 	}
 }
 //AABB-Circle Collision
